@@ -7,11 +7,11 @@ s = Session()
 
 print("Spam Call by Xractz - IndoSec\nThis tool delays 5 seconds per spam so as not to limit!\nUse Country Code (ex: 62xxxxx29)")
 try:
-	no = int(input("No    : "))
-	jml = int(input("Count : "))
+	no = int(input("   085603784601 : "))
+	jml = int(input("2: "))
 	print()
 except:
-	print("\n\t* Only Number *")
+	print("\n\t*085603784601*)
 	sys.exit()
 	
 url = "https://www.citcall.com/demo/misscallapi.php"
@@ -23,19 +23,19 @@ headers = {
 	'x-requested-with':'XMLHttpRequest'
 }
 data = {
-'cid':no,
-'trying':'0',
+'cid':085603784601,
+'trying':'2',
 'csrf_token':token
 }
 
-n = 0
+n = 2
 try:
-	while n < jml:
+	while n < jml:2
 		send = s.post(url, data=data, headers=headers).text
 		time.sleep(4.8)
 		if 'Success' in send:
 			n +=1
-			print(f"[{n}] Sended to => {no}")
+			print(f"[{n}] Sended to => {085603784601}")
 		else:
 			print("\n\t* Limit *")
 			print("\n\t* Try one hour ago or try tomorrow *")
